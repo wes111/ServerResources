@@ -13,11 +13,10 @@ enum EnvironmentKey {
     
     var value: String {
         switch self {
-            
         case .projectId:
-            ProcessInfo.processInfo.environment["APPWRITE_FUNCTION_PROJECT_ID"]!
+            return ProcessInfo.processInfo.environment["APPWRITE_FUNCTION_PROJECT_ID"]!
         case .projectEndpoint:
-            ProcessInfo.processInfo.environment["PROJECT_ENDPOINT"]!
+            return ProcessInfo.processInfo.environment["PROJECT_ENDPOINT"]!
         }
     }
 }
