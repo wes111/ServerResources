@@ -7,11 +7,11 @@
 import Appwrite
 import Foundation
 
-enum EnvironmentKey {
+public enum EnvironmentKey {
     case projectId
     case projectEndpoint
     
-    var value: String {
+    public var value: String {
         switch self {
         case .projectId:
             return ProcessInfo.processInfo.environment["APPWRITE_FUNCTION_PROJECT_ID"]!
