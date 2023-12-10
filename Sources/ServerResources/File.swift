@@ -22,4 +22,15 @@ public enum EnvironmentKey {
             return ProcessInfo.processInfo.environment["PROJECT_API_KEY"]!
         }
     }
+    
+    public static let client: Client = {
+        Client()
+            .setEndpoint(EnvironmentKey.projectEndpoint.value)
+            .setProject(EnvironmentKey.projectId.value)
+            .setKey(EnvironmentKey.projectApiKey.value)
+    }()
+    
+    public static let usersService: Users = {
+        Users(client)
+    }()
 }
