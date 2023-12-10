@@ -10,6 +10,7 @@ import Foundation
 public enum EnvironmentKey {
     case projectId
     case projectEndpoint
+    case projectApiKey
     
     public var value: String {
         switch self {
@@ -17,6 +18,8 @@ public enum EnvironmentKey {
             return ProcessInfo.processInfo.environment["APPWRITE_FUNCTION_PROJECT_ID"]!
         case .projectEndpoint:
             return ProcessInfo.processInfo.environment["PROJECT_ENDPOINT"]!
+        case .projectApiKey:
+            return ProcessInfo.processInfo.environment["PROJECT_API_KEY"]!
         }
     }
 }
