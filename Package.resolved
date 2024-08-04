@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/appwrite/sdk-for-swift",
       "state" : {
-        "revision" : "d1c25a9242355c3bcebf17c5187aad46389692d1",
-        "version" : "4.1.0"
+        "revision" : "4544a01720da808bc7e3462235f3c522eebc5cab",
+        "version" : "5.0.2"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/wes111/SharedResourcesClientAndServer",
       "state" : {
-        "revision" : "a7854554333f26ecf72f07a379036d941b491d87",
-        "version" : "1.0.14"
+        "revision" : "1c4dbd2fa08e1d33e756b96a4701882b0ceadf47",
+        "version" : "1.0.51"
       }
     },
     {
