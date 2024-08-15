@@ -15,7 +15,7 @@ let package = Package(
             targets: ["ServerResources"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/appwrite/sdk-for-swift", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/appwrite/sdk-for-swift", .upToNextMajor(from: "4.0.0")),
         .package(url: "https://github.com/wes111/SharedResourcesClientAndServer", .upToNextMajor(from: "1.0.0"))
     ],
     targets: [
